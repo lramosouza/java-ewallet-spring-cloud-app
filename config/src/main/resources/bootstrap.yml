@@ -1,0 +1,21 @@
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    prefer-ip-address: true
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+          defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka
+server:
+  port: 8888
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/workspace/api-gateway-ewallet/config-repo
+management:
+    security:
+        enabled: false

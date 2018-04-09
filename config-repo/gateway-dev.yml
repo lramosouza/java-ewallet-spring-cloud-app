@@ -1,0 +1,7 @@
+ribbon:
+    eureka:
+        enabled: true
+    ConnectTimeout: 30000
+    ReadTimeout: 30000
+zuul:
+    sensitiveHeaders: Cookie,Set-Cookie

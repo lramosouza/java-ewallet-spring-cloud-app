@@ -1,0 +1,12 @@
+spring:
+    jackson:
+        default-property-inclusion: non-null 
+        serialization:
+            write-dates-as-timestamps: false
+            indent-output: false
+            write-enums-using-to-string: false
+        deserialization:
+            read-enums-using-to-string: false
+management:
+    security:
+        enabled: false
